@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balance de Líneas MOD - Bodega de Herrajes</title>
+  <title>Balance de Líneas MOD - Forrado de Hebilla</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
 /* ============================================================
-   BALANCE DE LÍNEAS BODEGA DE HERRAJES — styles.css
+   BALANCE DE LÍNEAS FORRADO DE HEBILLA — styles.css
    ============================================================ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -2909,7 +2909,7 @@ body.light-mode .balance-visual-cell {
 }
 
   
-/* MOD Bodega de Herrajes 8 semanas: se ocultan módulos no requeridos sin alterar la estructura base */
+/* MOD Forrado de Hebilla 8 semanas: se ocultan módulos no requeridos sin alterar la estructura base */
 .simulators-grid, .wip-separator, .wip-module, #uploadCardProyeccion, #fuenteTabs { display: none !important; }
 .upload-grid-3 { grid-template-columns: repeat(2, 1fr); }
 
@@ -3148,7 +3148,7 @@ body.light-mode .balance-visual-cost-unit-row td {
       <div class="header-brand">
         <img class="brand-logo-balance" src="data:image/png;base64,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" alt="TATA Accesorios Globales">
         <div>
-          <h1 class="brand-title">Balance de Líneas MOD - Bodega de Herrajes</h1>
+          <h1 class="brand-title">Balance de Líneas MOD - Forrado de Hebilla</h1>
           <p class="brand-sub">Planificación de recurso y análisis de eficiencia en tiempo real</p>
         </div>
       </div>
@@ -3233,7 +3233,7 @@ body.light-mode .balance-visual-cost-unit-row td {
       </div>
       <div id="uploadMessage" class="upload-message upload-wait">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M7.5 5v3l2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span id="uploadMessageText">Cargue el MASTER PLAN manual. Se tomarán las próximas 8 semanas ISO. Rutas, SAMs, eficiencias y HC actual de Bodega de Herrajes se leen desde Supabase.</span>
+        <span id="uploadMessageText">Cargue el MASTER PLAN manual. Se tomarán las próximas 8 semanas ISO. Rutas, SAMs, eficiencias y HC actual de Forrado de Hebilla se leen desde Supabase.</span>
       </div>
     </section>
 
@@ -3361,7 +3361,7 @@ body.light-mode .balance-visual-cost-unit-row td {
           </div>
           <div>
             <p class="balance-visual-kicker">Resumen ejecutivo</p>
-            <h2 class="balance-visual-title" id="balanceResumenVisualTitle">Balance Bodega de Herrajes</h2>
+            <h2 class="balance-visual-title" id="balanceResumenVisualTitle">Balance Forrado de Hebilla</h2>
             <p class="balance-visual-sub" id="balanceResumenVisualSub">HC por línea y semana calculado desde el balance actual</p>
           </div>
         </div>
@@ -3374,13 +3374,13 @@ body.light-mode .balance-visual-cost-unit-row td {
           <div>
             <p class="hc-chart-kicker">Capacidad vs requerimiento</p>
             <h3 class="hc-chart-title">HC solicitado por semana</h3>
-            <p class="hc-chart-sub">Barras: Bodega de Herrajes · Línea fija: HC actual del área Bodega de Herrajes</p>
+            <p class="hc-chart-sub">Barras: Forrado de Hebilla · Línea fija: HC actual del área Forrado de Hebilla</p>
           </div>
           <div class="hc-actual-box hc-actual-box-split">
             <label>HC actual del área</label>
             <div class="hc-actual-split-grid">
               <div class="hc-actual-mini-field">
-                <span>Bodega de Herrajes</span>
+                <span>Forrado de Hebilla</span>
                 <div class="hc-actual-input-wrap">
                   <input id="hcActualInputEnsamble" class="hc-actual-input hc-actual-input-mini" type="number" min="0" step="0.1" value="0" />
                   <span class="hc-actual-unit">HC</span>
@@ -3395,7 +3395,7 @@ body.light-mode .balance-visual-cost-unit-row td {
               </div>
             </div>
             <div class="hc-actual-total-line">Total actual: <strong id="hcActualTotalDisplay">0.0</strong> HC</div>
-            <div class="hc-actual-status" id="hcActualStatus">Supabase · Bodega de Herrajes</div>
+            <div class="hc-actual-status" id="hcActualStatus">Supabase · Forrado de Hebilla</div>
           </div>
         </div>
         <div class="hc-chart-body" id="hcChartBody">
@@ -3702,13 +3702,13 @@ body.light-mode .balance-visual-cost-unit-row td {
 
     </section>
   <footer class="app-footer">
-    <span>Balance de Líneas MOD - Bodega de Herrajes</span>
+    <span>Balance de Líneas MOD - Forrado de Hebilla</span>
     <span>HC = (SAM × Unidades) / (Horas × 60 × Eficiencia dinámica)</span>
   </footer>
 
   <script>
 /* ============================================================
-   BALANCE DE LÍNEAS BODEGA DE HERRAJES — script.js
+   BALANCE DE LÍNEAS FORRADO DE HEBILLA — script.js
    Cambios: filtros con búsqueda, 44h sin fecha, sábado=6h,
    edición inline de unidades, tooltip sin eficiencia y dinámico.
    ============================================================ */
@@ -3746,9 +3746,9 @@ Object.entries(EFICIENCIAS_MAESTRAS).forEach(([op, ef]) => {
 });
 
 
-/* Eficiencias desde Supabase: este balance consume únicamente operaciones del área Bodega de Herrajes.
+/* Eficiencias desde Supabase: este balance consume únicamente operaciones del área Forrado de Hebilla.
    No se cargan operaciones base locales. Si una operación no existe, se usa 85% y se marca como NUEVA. */
-const EF_ETAPAS_BALANCE = ['BODEGA DE HERRAJES', 'BODEGA HERRAJES'];
+const EF_ETAPAS_BALANCE = ['FORRADO DE HEBILLA', 'FORRADO HEBILLA'];
 const EFICIENCIAS_ETAPAS = new Map();
 const OPERACIONES_NUEVAS = new Map();
 let cargandoEficienciasSupabase = false;
@@ -3762,7 +3762,7 @@ function normalizarEficienciaBD(valor) {
 }
 
 function etapaEficienciaBalance(valor) {
-  return 'BODEGA DE HERRAJES';
+  return 'FORRADO DE HEBILLA';
 }
 
 function resetEficienciasRuntime() {
@@ -3814,7 +3814,7 @@ async function cargarEficienciasSupabase(force = false) {
   }
 }
 
-async function guardarEficienciaSupabase(op, eficiencia, etapa = 'BODEGA DE HERRAJES') {
+async function guardarEficienciaSupabase(op, eficiencia, etapa = 'FORRADO DE HEBILLA') {
   if (!supabaseBalance || !op) return;
   const payload = {
     operacion: String(op).trim(),
@@ -3833,7 +3833,7 @@ async function guardarEficienciaSupabase(op, eficiencia, etapa = 'BODEGA DE HERR
   }
 }
 
-function registrarOperacionNueva(op, etapa = 'BODEGA DE HERRAJES') {
+function registrarOperacionNueva(op, etapa = 'FORRADO DE HEBILLA') {
   const opDisplay = String(op || '').trim();
   const opKey = norm(opDisplay);
   if (!opKey) return 0.85;
@@ -3938,7 +3938,7 @@ function eficienciaItemsOrdenados() {
         op,
         normOp,
         ef: Number(EFICIENCIAS_MAESTRAS[op]) || 0,
-        etapa: EFICIENCIAS_ETAPAS.get(normOp) || metaNueva?.etapa || 'BODEGA DE HERRAJES',
+        etapa: EFICIENCIAS_ETAPAS.get(normOp) || metaNueva?.etapa || 'FORRADO DE HEBILLA',
         nueva,
         activa: operacionActiva(op)
       };
@@ -4029,12 +4029,12 @@ function renderPanelEficiencias() {
   }).join('');
 }
 
-function aplicarCambioEficiencia(op, porcentaje, etapa = 'BODEGA DE HERRAJES') {
+function aplicarCambioEficiencia(op, porcentaje, etapa = 'FORRADO DE HEBILLA') {
   const pct = Number(porcentaje);
   if (!op || isNaN(pct)) return;
   const ef = Math.max(1, Math.min(100, pct)) / 100;
   const opKey = norm(op);
-  const etapaFinal = etapaEficienciaBalance(etapa || EFICIENCIAS_ETAPAS.get(opKey) || 'BODEGA DE HERRAJES');
+  const etapaFinal = etapaEficienciaBalance(etapa || EFICIENCIAS_ETAPAS.get(opKey) || 'FORRADO DE HEBILLA');
   EFICIENCIAS_MAESTRAS[op] = ef;
   MAPA_EFICIENCIAS.set(opKey, ef);
   EFICIENCIAS_ETAPAS.set(opKey, etapaFinal);
@@ -4138,11 +4138,11 @@ const supabaseBalance = window.supabase
   : null;
 
 const HC_ACTUAL_TABLA = 'hc_actual_area';
-const HC_ACTUAL_AREAS = ['BODEGA DE HERRAJES', 'BODEGA HERRAJES'];
-const HC_ACTUAL_AREA = 'BODEGA DE HERRAJES'; // área única
-const HC_ACTUAL_WEBBING = 'BODEGA HERRAJES'; // compatibilidad interna
-const hcActualPorArea = { 'BODEGA DE HERRAJES': 0, 'BODEGA HERRAJES': 0, ENSAMBLE: 0, WEBBING: 0 };
-let hcActualArea = 0; // total área Bodega de Herrajes
+const HC_ACTUAL_AREAS = ['FORRADO DE HEBILLA', 'FORRADO HEBILLA'];
+const HC_ACTUAL_AREA = 'FORRADO DE HEBILLA'; // área única
+const HC_ACTUAL_WEBBING = 'FORRADO HEBILLA'; // compatibilidad interna
+const hcActualPorArea = { 'FORRADO DE HEBILLA': 0, 'FORRADO HEBILLA': 0, ENSAMBLE: 0, WEBBING: 0 };
+let hcActualArea = 0; // total área Forrado de Hebilla
 let guardandoHCActualTimer = null;
 
 
@@ -4232,7 +4232,7 @@ function esEtapaValida(etapaRaw) {
 }
 
 function etapaLabel(etapaRaw) {
-  return 'BODEGA DE HERRAJES';
+  return 'FORRADO DE HEBILLA';
 }
 
 function celdaANumero(val) {
@@ -4464,6 +4464,10 @@ function procesarPrograma(workbook) {
 /* ────────────────────────────────────────────────────────────
    PASO 2: PROCESAR Rutas Supabase
    ──────────────────────────────────────────────────────────── */
+// FORRADOHEBILLAMOD: separar existencia de ruta de existencia de SAM positivo.
+const FORRADOMOD_ESTILOS_CON_RUTA = new Set();
+const FORRADOMOD_ESTILOS_CON_SAM = new Set();
+
 function procesarSams(workbook) {
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
   const filasRaw = XLSX.utils.sheet_to_json(sheet, { defval: null, raw: false, header: 1 });
@@ -4490,10 +4494,13 @@ function procesarSams(workbook) {
     const estilo    = norm(iEstilo >= 0 ? (fila[iEstilo] || '') : '');
     const operacion = norm(iOp     >= 0 ? (fila[iOp]     || '') : '');
     const sam       = celdaANumero(iSam >= 0 ? fila[iSam] : 0);
-    if (!estilo || !operacion || sam <= 0) continue;
+    if (!estilo || !operacion) continue;
+    FORRADOMOD_ESTILOS_CON_RUTA.add(estilo);
+    if (sam <= 0) continue;
+    FORRADOMOD_ESTILOS_CON_SAM.add(estilo);
     const clave = `${estilo}||${operacion}`;
     if (!mapa.has(clave)) {
-      mapa.set(clave, { sam, etapa: iEtapa >= 0 ? etapaLabel(etapaRaw) : 'BODEGA DE HERRAJES' });
+      mapa.set(clave, { sam, etapa: iEtapa >= 0 ? etapaLabel(etapaRaw) : 'FORRADO DE HEBILLA' });
       validas++;
     }
   }
@@ -4506,6 +4513,8 @@ function procesarSams(workbook) {
 
 function procesarSamsDesdeSupabase(registros) {
   const mapa = new Map();
+  FORRADOMOD_ESTILOS_CON_RUTA.clear();
+  FORRADOMOD_ESTILOS_CON_SAM.clear();
   let leidas = 0, validas = 0;
 
   (registros || []).forEach(row => {
@@ -4517,7 +4526,10 @@ function procesarSamsDesdeSupabase(registros) {
     const operacion = norm(row.operacion || '');
     const sam = celdaANumero(row.sam);
 
-    if (!estilo || !operacion || sam <= 0) return;
+    if (!estilo || !operacion) return;
+    FORRADOMOD_ESTILOS_CON_RUTA.add(estilo);
+    if (sam <= 0) return;
+    FORRADOMOD_ESTILOS_CON_SAM.add(estilo);
 
     const clave = `${estilo}||${operacion}`;
     if (!mapa.has(clave)) {
@@ -4536,6 +4548,7 @@ function procesarSamsDesdeSupabase(registros) {
   console.log(`Supabase rutas_activas: leídas ${leidas} | válidas ${validas} | mapa ${mapa.size}`);
   return mapa;
 }
+
 
 let cargandoSamsSupabase = false;
 let firmaUltimaConsultaSams = '';
@@ -4829,6 +4842,9 @@ async function cargarSamsDesdeSupabase() {
    ──────────────────────────────────────────────────────────── */
 function crearRegistroSinRuta(reg, motivo) {
   const horas = horasPorFecha(reg.fecha);
+  const motivoNorm = norm(motivo || '');
+  const sinSam = motivoNorm.includes('SIN SAM');
+  const sinRutaEstilo = motivoNorm.includes('SIN RUTA');
   return {
     fecha:           reg.fecha,
     linea:           reg.linea,
@@ -4846,7 +4862,9 @@ function crearRegistroSinRuta(reg, motivo) {
     unidades:        reg.unidades,
     horas,
     hc:              0,
-    sinRuta:         true
+    sinRuta:         sinRutaEstilo,
+    sinRutaEstilo,
+    sinSam
   };
 }
 
@@ -4857,7 +4875,8 @@ function cruzarDatos() {
   estado.rawPrograma.forEach(reg => {
     const estiloKey = estiloKeyCruce(reg.estiloNorm || reg.estilo);
     const antes = resultado.length;
-    let tuvoEstilo = false;
+    let tuvoEstilo = FORRADOMOD_ESTILOS_CON_RUTA.has(estiloKey);
+    let tuvoSamPositivo = FORRADOMOD_ESTILOS_CON_SAM.has(estiloKey);
     let tuvoOperacionConEficiencia = false;
 
     if (estado.mapaSams && estado.mapaSams.size) {
@@ -4906,7 +4925,7 @@ function cruzarDatos() {
       sinRuta++;
       const motivo = !tuvoEstilo
         ? 'SIN RUTA ACTIVA'
-        : (!tuvoOperacionConEficiencia ? 'SIN OPERACIÓN ACTIVA' : 'SIN HC CALCULABLE');
+        : (!tuvoSamPositivo ? 'SIN SAM' : (!tuvoOperacionConEficiencia ? 'SIN OPERACIÓN ACTIVA' : 'SIN HC CALCULABLE'));
       resultado.push(crearRegistroSinRuta(reg, motivo));
     }
   });
@@ -4952,7 +4971,8 @@ function cruzarDatosProyeccion() {
   estadoProyeccion.rawPrograma.forEach(reg => {
     const estiloKey = estiloKeyCruce(reg.estiloNorm || reg.estilo);
     const antes = resultado.length;
-    let tuvoEstilo = false;
+    let tuvoEstilo = FORRADOMOD_ESTILOS_CON_RUTA.has(estiloKey);
+    let tuvoSamPositivo = FORRADOMOD_ESTILOS_CON_SAM.has(estiloKey);
     let tuvoOperacionConEficiencia = false;
 
     if (estado.mapaSams && estado.mapaSams.size) {
@@ -4982,7 +5002,7 @@ function cruzarDatosProyeccion() {
     if (resultado.length === antes) {
       const motivo = !tuvoEstilo
         ? 'SIN RUTA ACTIVA'
-        : (!tuvoOperacionConEficiencia ? 'SIN OPERACIÓN ACTIVA' : 'SIN HC CALCULABLE');
+        : (!tuvoSamPositivo ? 'SIN SAM' : (!tuvoOperacionConEficiencia ? 'SIN OPERACIÓN ACTIVA' : 'SIN HC CALCULABLE'));
       resultado.push(crearRegistroSinRuta(reg, motivo));
     }
   });
@@ -5011,11 +5031,15 @@ function generarResumen(datosDetalle) {
         estiloNorm: r.estiloNorm,
         exDate: r.exDate, cantOrden: r.cantOrden, totalPlanificado: r.totalPlanificado,
         dias: {},
-        hcTotalGeneral: 0
+        hcTotalGeneral: 0,
+        sinRutaEstilo: false,
+        sinSam: false
       });
     }
 
     const grupo = mapaGrupos.get(grupoKey);
+    grupo.sinRutaEstilo = grupo.sinRutaEstilo || !!r.sinRutaEstilo;
+    grupo.sinSam = grupo.sinSam || !!r.sinSam;
     const iso   = fechaISO(r.fecha);
     setFechas.add(iso);
 
@@ -5798,7 +5822,7 @@ function extraerCantidadHC(row) {
 }
 
 function actualizarHCActualTotalDisplay() {
-  hcActualArea = Number(hcActualPorArea['BODEGA DE HERRAJES'] || hcActualPorArea['BODEGA HERRAJES'] || 0);
+  hcActualArea = Number(hcActualPorArea['FORRADO DE HEBILLA'] || hcActualPorArea['FORRADO HEBILLA'] || 0);
   hcActualPorArea.ENSAMBLE = hcActualArea; // compatibilidad con rutinas internas existentes
   hcActualPorArea.WEBBING = 0;
   const total = document.getElementById('hcActualTotalDisplay');
@@ -5822,22 +5846,22 @@ async function cargarHCActualArea() {
 
     if (error) throw error;
 
-    hcActualPorArea['BODEGA DE HERRAJES'] = 0;
-    hcActualPorArea['BODEGA HERRAJES'] = 0;
+    hcActualPorArea['FORRADO DE HEBILLA'] = 0;
+    hcActualPorArea['FORRADO HEBILLA'] = 0;
     hcActualPorArea.ENSAMBLE = 0;
     hcActualPorArea.WEBBING = 0;
 
     (data || []).forEach(row => {
       const area = normalizarAreaHC(row.area || row['área']);
-      if (area === 'BODEGA DE HERRAJES') hcActualPorArea['BODEGA DE HERRAJES'] = extraerCantidadHC(row);
-      if (area === 'BODEGA HERRAJES') hcActualPorArea['BODEGA HERRAJES'] = extraerCantidadHC(row);
+      if (area === 'FORRADO DE HEBILLA') hcActualPorArea['FORRADO DE HEBILLA'] = extraerCantidadHC(row);
+      if (area === 'FORRADO HEBILLA') hcActualPorArea['FORRADO HEBILLA'] = extraerCantidadHC(row);
     });
 
-    setInputHCActual('BODEGA DE HERRAJES', hcActualPorArea['BODEGA DE HERRAJES'] || hcActualPorArea['BODEGA HERRAJES']);
+    setInputHCActual('FORRADO DE HEBILLA', hcActualPorArea['FORRADO DE HEBILLA'] || hcActualPorArea['FORRADO HEBILLA']);
     actualizarHCActualTotalDisplay();
 
-    const tieneBodega = (data || []).some(r => { const a = normalizarAreaHC(r.area || r['área']); return a === 'BODEGA DE HERRAJES' || a === 'BODEGA HERRAJES'; });
-    setHCActualStatus(tieneBodega ? 'Guardado en Supabase' : 'Supabase incompleto: falta Bodega de Herrajes');
+    const tieneBodega = (data || []).some(r => { const a = normalizarAreaHC(r.area || r['área']); return a === 'FORRADO DE HEBILLA' || a === 'FORRADO HEBILLA'; });
+    setHCActualStatus(tieneBodega ? 'Guardado en Supabase' : 'Supabase incompleto: falta Forrado de Hebilla');
     renderizarGraficaHCActual();
   } catch (error) {
     console.warn('No se pudo cargar HC actual desde Supabase:', error);
@@ -5850,7 +5874,7 @@ async function guardarHCActualArea(area, valor) {
   const n = Math.max(0, Number(valor) || 0);
   if (!HC_ACTUAL_AREAS.includes(areaNorm)) return;
 
-  hcActualPorArea[areaNorm === 'BODEGA HERRAJES' ? 'BODEGA DE HERRAJES' : areaNorm] = n;
+  hcActualPorArea[areaNorm === 'FORRADO HEBILLA' ? 'FORRADO DE HEBILLA' : areaNorm] = n;
   setInputHCActual(areaNorm, n);
   actualizarHCActualTotalDisplay();
   renderizarGraficaHCActual();
@@ -5865,7 +5889,7 @@ async function guardarHCActualArea(area, valor) {
     const { error } = await supabaseBalance
       .from(HC_ACTUAL_TABLA)
       .upsert({
-        area: 'BODEGA DE HERRAJES',
+        area: 'FORRADO DE HEBILLA',
         cantidad_hc: Number(n.toFixed(2)),
         updated_at: new Date().toISOString()
       }, { onConflict: 'area' });
@@ -5900,12 +5924,12 @@ function inicializarInputHCActual(area, inputId) {
 }
 
 function inicializarHCActualArea() {
-  inicializarInputHCActual('BODEGA DE HERRAJES', 'hcActualInputEnsamble');
+  inicializarInputHCActual('FORRADO DE HEBILLA', 'hcActualInputEnsamble');
   cargarHCActualArea();
 }
 
 function esLineaWebbing(linea) {
-  return false; // Bodega de Herrajes es un área única; no se desglosa por Webbing.
+  return false; // Forrado de Hebilla es un área única; no se desglosa por Webbing.
 }
 
 function obtenerDesgloseHCChart(fechasBase) {
@@ -6864,7 +6888,7 @@ if (btnLimpiarArchivosEl) btnLimpiarArchivosEl.addEventListener('click', () => {
   if (stSams) { stSams.textContent = 'Esperando programa'; stSams.className = 'upload-card-status pending'; }
   if (fnSams) fnSams.textContent = 'Supabase · consulta completa compacta';
   if (cardSams) cardSams.classList.remove('loaded');
-  mostrarMensajeUpload('Cargue el MASTER PLAN manual. Se tomarán las próximas 8 semanas ISO. Rutas, SAMs, eficiencias y HC actual de Bodega de Herrajes se leen desde Supabase.', 'wait');
+  mostrarMensajeUpload('Cargue el MASTER PLAN manual. Se tomarán las próximas 8 semanas ISO. Rutas, SAMs, eficiencias y HC actual de Forrado de Hebilla se leen desde Supabase.', 'wait');
 
   // Reset panel de líneas
   const lineaList = document.getElementById('lineaDropdownList');
@@ -7989,14 +8013,18 @@ function mod8ObtenerSemanaISO(fecha = new Date()) {
   return Math.ceil((((d - inicioAno) / 86400000) + 1) / 7);
 }
 function mod8SemanasSiguientes(cantidad = 8, fecha = new Date()) {
+  // IMPORTANTE FORRADOHEBILLAMOD:
+  // El MASTER PLAN original se clasifica con la misma lógica de NUM.DE.SEMANA
+  // (mod8ExcelWeekNum). El horizonte debe usar ESA MISMA numeración para no mover
+  // unidades entre semanas ni alterar el HC original del balance.
   const semanas = [];
-  const cursor = new Date(Date.UTC(fecha.getFullYear(), fecha.getMonth(), fecha.getDate()));
-  // Comenzar en el lunes de la semana siguiente; nunca incluir la semana actual.
-  const dia = cursor.getUTCDay() || 7;
-  cursor.setUTCDate(cursor.getUTCDate() - dia + 8);
+  const cursor = new Date(fecha.getFullYear(), fecha.getMonth(), fecha.getDate());
+  const dia = cursor.getDay() || 7;
+  // Lunes de la semana siguiente: excluye de forma explícita la semana en curso.
+  cursor.setDate(cursor.getDate() - dia + 8);
   for (let i = 0; i < cantidad; i++) {
-    semanas.push(mod8ObtenerSemanaISO(cursor));
-    cursor.setUTCDate(cursor.getUTCDate() + 7);
+    semanas.push(mod8ExcelWeekNum(cursor));
+    cursor.setDate(cursor.getDate() + 7);
   }
   return semanas;
 }
@@ -8004,11 +8032,16 @@ const MOD8_SEMANAS = mod8SemanasSiguientes(8);
 const MOD8_SEMANA_INICIO = MOD8_SEMANAS[0];
 const MOD8_SEMANA_FIN = MOD8_SEMANAS[MOD8_SEMANAS.length - 1];
 const MOD8_RANGO_TEXTO = MOD8_SEMANAS.join(', ');
+const MOD8_SEMANA_ACTUAL = mod8ExcelWeekNum(new Date());
+if (MOD8_SEMANAS[0] === MOD8_SEMANA_ACTUAL) {
+  console.error('FORRADOHEBILLAMOD: el horizonte incluyó la semana actual por error', {actual:MOD8_SEMANA_ACTUAL,semanas:MOD8_SEMANAS});
+}
+console.info('FORRADOHEBILLAMOD horizonte', {semanaActual:MOD8_SEMANA_ACTUAL, semanaInicio:MOD8_SEMANA_INICIO, semanaFin:MOD8_SEMANA_FIN, semanas:MOD8_SEMANAS});
 setTimeout(() => {
   const filtroSemana = document.getElementById('filtroFecha');
   if (filtroSemana) filtroSemana.placeholder = `Semanas ${MOD8_SEMANA_INICIO}-${MOD8_SEMANA_FIN}`;
   const mensaje = document.getElementById('uploadMessageText');
-  if (mensaje) mensaje.textContent = `Cargue el MASTER PLAN manual. Se tomarán automáticamente las semanas ${MOD8_RANGO_TEXTO}, sin incluir la semana actual. Rutas, SAMs, eficiencias y HC actual de Bodega de Herrajes se leen desde Supabase.`;
+  if (mensaje) mensaje.textContent = `Cargue el MASTER PLAN manual. Se tomarán automáticamente las semanas ${MOD8_RANGO_TEXTO}, sin incluir la semana actual. Rutas, SAMs, eficiencias y HC actual de Forrado de Hebilla se leen desde Supabase.`;
 }, 0);
 const MOD8_MAX_HE_PERSONA = 16;
 const MOD8_PARAM_TABLA = 'parametros_generales';
@@ -8018,6 +8051,50 @@ let mod8Parametros = { costoHoraOrdinaria: 3.47, costoHoraExtra: 4.17 };
 let mod8UltimoOptimo = null;
 let mod8OptimoExpandido = false;
 let mod8TotalHCExpandido = false;
+
+// FORRADOHEBILLAMOD: HC óptimo editable por semana. Se conserva localmente y solo afecta
+// HC óptimo, eficiencia proyectada y snapshot del Backend Universal.
+const FORRADOHEBILLAMOD_OPTIMO_STORAGE = 'forradohebillamod_hc_optimo_manual_v1';
+let forradoHebillaModOptimoManual = new Map();
+try {
+  const raw = JSON.parse(localStorage.getItem(FORRADOHEBILLAMOD_OPTIMO_STORAGE) || '{}');
+  Object.entries(raw || {}).forEach(([k,v]) => { const n=Number(v); if(Number.isFinite(n) && n>=0) forradoHebillaModOptimoManual.set(String(k), n); });
+} catch(e) { console.warn('No se pudo leer HC óptimo manual de FORRADOHEBILLAMOD:', e); }
+function forradoHebillaModGuardarOptimos(){
+  try { localStorage.setItem(FORRADOHEBILLAMOD_OPTIMO_STORAGE, JSON.stringify(Object.fromEntries(forradoHebillaModOptimoManual))); } catch(e) {}
+}
+function forradoHebillaModCostoOptimoSemana(reqHC, hcOptimo, semana){
+  const h = Number(mod8Horas(semana) || 44);
+  const hc = Math.max(0, Number(hcOptimo || 0));
+  const workloadHoras = Math.max(0, Number(reqHC || 0)) * h;
+  const capOrd = hc * h;
+  const he = Math.max(0, workloadHoras - capOrd);
+  const costo = (hc * h * Number(mod8Parametros.costoHoraOrdinaria || 3.47)) + (he * Number(mod8Parametros.costoHoraExtra || 4.17));
+  return { horas:h, hc, he, costo, workloadHoras, capacidadOrdinaria:capOrd, capacidadMax:hc*(h+MOD8_MAX_HE_PERSONA) };
+}
+function forradoHebillaModAplicarOptimoManual(optimoBase, totalPorSemana, fechas){
+  const opt = {
+    ...optimoBase,
+    porSemana:{...(optimoBase?.porSemana||{})},
+    detalle:(optimoBase?.detalle||[]).map(x=>({...x}))
+  };
+  (fechas||[]).forEach(iso=>{
+    const sem=mod8SemanaDesdeIso(iso);
+    const key=String(sem);
+    const base=Number(opt.porSemana[iso]||0);
+    const hc=forradoHebillaModOptimoManual.has(key) ? Number(forradoHebillaModOptimoManual.get(key)) : base;
+    opt.porSemana[iso]=hc;
+    const d=forradoHebillaModCostoOptimoSemana(Number(totalPorSemana?.[iso]||0), hc, sem);
+    let rec=opt.detalle.find(x=>x.iso===iso);
+    if(!rec){ rec={iso,semana:sem,requerido:Number(totalPorSemana?.[iso]||0)}; opt.detalle.push(rec); }
+    Object.assign(rec,{hc,he:d.he,costo:d.costo,horas:d.horas,capacidadOrdinaria:d.capacidadOrdinaria,capacidadMax:d.capacidadMax});
+  });
+  opt.promedio=(fechas||[]).reduce((a,iso)=>a+Number(opt.porSemana[iso]||0),0)/Math.max((fechas||[]).length,1);
+  opt.costoTotal=opt.detalle.reduce((a,x)=>a+Number(x.costo||0),0);
+  opt.heTotal=opt.detalle.reduce((a,x)=>a+Number(x.he||0),0);
+  return opt;
+}
+
 
 function mod8IsoSemana(sem) { return `SEMANA-${String(sem).padStart(2,'0')}`; }
 function mod8SemanaDesdeIso(iso) {
@@ -8385,7 +8462,7 @@ renderizarTabla = function() {
   const conteo = document.getElementById('conteoTabla');
   const src    = getEstadoActivo();
   const filas  = src.resumenFilas || [];
-  const fechas = (src.fechasColumnas && src.fechasColumnas.length) ? src.fechasColumnas : MOD8_SEMANAS.map(mod8IsoSemana);
+  const fechas = MOD8_SEMANAS.map(mod8IsoSemana);
   if (conteo) conteo.textContent = filas.length;
   if (!filas.length) {
     thead.innerHTML = '';
@@ -8408,14 +8485,18 @@ renderizarTabla = function() {
   requestAnimationFrame(ajustarStickyThead);
   tbody.innerHTML = filas.map((grupo, gi) => {
     const color = colorLinea(grupo.linea);
-    const tdFijos = `<td><span class="td-linea"><span class="linea-dot" style="background:${color}"></span>${esc(grupo.linea)}</span></td><td><strong>${esc(grupo.orden)}</strong></td><td>${esc(grupo.estilo)}</td><td>${esc(grupo.cliente)}</td><td style="font-family:var(--font-mono);font-size:.75rem;">${esc(grupo.exDate)}</td><td class="num">${grupo.cantOrden > 0 ? grupo.cantOrden.toLocaleString() : '—'}</td><td class="num">${grupo.totalPlanificado > 0 ? grupo.totalPlanificado.toLocaleString() : '—'}</td>`;
+    const alertaRuta = !!grupo.sinRutaEstilo;
+    const alertaSam = !alertaRuta && !!grupo.sinSam;
+    const alertaCls = (alertaRuta || alertaSam) ? ' forradohebillamod-row-route-warning' : '';
+    const alertaBadge = alertaRuta ? '<span class="forradohebillamod-route-badge">SIN RUTA</span>' : (alertaSam ? '<span class="forradohebillamod-route-badge">SIN SAM</span>' : '');
+    const tdFijos = `<td><span class="td-linea"><span class="linea-dot" style="background:${color}"></span>${esc(grupo.linea)}</span></td><td><strong>${esc(grupo.orden)}</strong></td><td>${esc(grupo.estilo)} ${alertaBadge}</td><td>${esc(grupo.cliente)}</td><td style="font-family:var(--font-mono);font-size:.75rem;">${esc(grupo.exDate)}</td><td class="num">${grupo.cantOrden > 0 ? grupo.cantOrden.toLocaleString() : '—'}</td><td class="num">${grupo.totalPlanificado > 0 ? grupo.totalPlanificado.toLocaleString() : '—'}</td>`;
     const tdDias = fechas.map(iso => {
       const dia = grupo.dias && grupo.dias[iso];
       if (!dia) return `<td class="td-dia td-dia-vacia" data-gi="${gi}" data-iso="${iso}">—</td>`;
       const detJson = esc(JSON.stringify(dia.detalleOperaciones || []));
       return `<td class="td-dia" data-gi="${gi}" data-iso="${iso}" data-fecha="${esc(dia.fecha)}" data-orden="${esc(grupo.orden)}" data-estilo="${esc(grupo.estilo)}" data-det="${detJson}"><div class="celda-dia-inner"><div class="celda-u-row"><input class="celda-u-input" type="number" min="0" value="${dia.unidades}" data-gi="${gi}" data-iso="${iso}" title="Editar unidades" /><span class="celda-u-suffix">u</span></div><span class="celda-dia-hc" id="hcdia-${gi}-${iso}">HC: ${dia.hcTotalDia.toFixed(1)}</span></div></td>`;
     }).join('');
-    return `<tr>${tdFijos}${tdDias}<td class="td-hctotal" id="hctotal-${gi}">${(grupo.hcTotalGeneral || 0).toFixed(1)}</td></tr>`;
+    return `<tr class="${alertaCls.trim()}">${tdFijos}${tdDias}<td class="td-hctotal" id="hctotal-${gi}">${(grupo.hcTotalGeneral || 0).toFixed(1)}</td></tr>`;
   }).join('');
   renderizarResumenVisualBalance();
 };
@@ -8515,12 +8596,12 @@ renderizarGraficaHCActual = function(totalPorDia = null, fechas = null) {
       <div class="hc-chart-tooltip" role="tooltip">
         <div class="hc-chart-tooltip-title"><span>${nombreEncabezadoDia(iso)}</span><span class="hc-chart-tooltip-status ${estadoClase}">${excede?'Alerta':'OK'}</span></div>
         <div class="hc-chart-tooltip-row"><span><span style="color:#9bbcff">●</span> HC solicitado total</span><strong>${total.toFixed(2)} HC</strong></div>
-        <div class="hc-chart-tooltip-row"><span>Solicitado Bodega de Herrajes</span><strong>${total.toFixed(2)} HC</strong></div>
+        <div class="hc-chart-tooltip-row"><span>Solicitado Forrado de Hebilla</span><strong>${total.toFixed(2)} HC</strong></div>
         <div class="hc-chart-tooltip-row" style="display:none"><span>Solicitado Webbing</span><strong>${webb.toFixed(2)} HC</strong></div>
         <div class="hc-chart-tooltip-row hc-chart-tooltip-total"><span><span style="color:#9ff0c5">━</span> HC actual total</span><strong>${hcActualTotal.toFixed(1)} HC</strong></div>
         <div class="hc-chart-tooltip-row"><span>Diferencia vs solicitado</span><strong>${diffActual >= 0 ? '+' : ''}${diffActual.toFixed(1)} HC</strong></div>
         <div class="hc-chart-tooltip-row hc-chart-tooltip-total"><span><span style="color:#ffd68c">━</span> HC óptimo recomendado</span><strong>${hcOpt.toFixed(0)} HC</strong></div>
-        <div class="hc-chart-tooltip-row"><span>Óptimo Bodega de Herrajes</span><strong>${hcOpt.toFixed(0)} HC</strong></div>
+        <div class="hc-chart-tooltip-row"><span>Óptimo Forrado de Hebilla</span><strong>${hcOpt.toFixed(0)} HC</strong></div>
         <div class="hc-chart-tooltip-row"><span>Diferencia óptimo vs solicitado</span><strong>${diffOptimo >= 0 ? '+' : ''}${diffOptimo.toFixed(1)} HC</strong></div>
         <div class="hc-chart-tooltip-row"><span>HE estimadas / Costo</span><strong>${heOpt.toFixed(1)}h · $${costoOpt.toFixed(0)}</strong></div>
       </div>
@@ -8560,7 +8641,7 @@ function mod8InicializarTooltipOptimo() {
       const semana = pt.dataset.semana || '';
       tt.innerHTML = `<div class="hc-chart-tooltip-title"><span>HC óptimo recomendado · Semana ${semana}</span><span class="hc-chart-tooltip-status ok">Línea amarilla</span></div>
         <div class="hc-chart-tooltip-row"><span>HC recomendado</span><strong>${pt.dataset.hc || '—'} HC</strong></div>
-        <div class="hc-chart-tooltip-row"><span>Bodega de Herrajes</span><strong>${pt.dataset.hcEns || '0'} HC</strong></div>
+        <div class="hc-chart-tooltip-row"><span>Forrado de Hebilla</span><strong>${pt.dataset.hcEns || '0'} HC</strong></div>
         <div class="hc-chart-tooltip-row" style="display:none"><span>Webbing</span><strong>${pt.dataset.hcWeb || '0'} HC</strong></div>
         <div class="hc-chart-tooltip-row"><span>HC requerido</span><strong>${pt.dataset.req || '—'} HC</strong></div>
         <div class="hc-chart-tooltip-row"><span>Horas extra estimadas</span><strong>${pt.dataset.he || '0.0'}h</strong></div>
@@ -8611,17 +8692,21 @@ renderizarResumenVisualBalance = function() {
     reqAreaOptimo.ENSAMBLE[iso] = lineas.filter(r => !esLineaWebbing(r.linea)).reduce((s,r)=>s+(r.dias[iso]||0),0);
     reqAreaOptimo.WEBBING[iso] = lineas.filter(r => esLineaWebbing(r.linea)).reduce((s,r)=>s+(r.dias[iso]||0),0);
   });
-  const samNumeradorPorSemana = {}, unidadesProgramadasPorSemana = {};
-  fechas.forEach(iso => { samNumeradorPorSemana[iso]=0; unidadesProgramadasPorSemana[iso]=0; });
+  const samNumeradorPorSemana = {}, unidadesProgramadasPorSemana = {}, unidadesConRutaPorSemana = {};
+  fechas.forEach(iso => { samNumeradorPorSemana[iso]=0; unidadesProgramadasPorSemana[iso]=0; unidadesConRutaPorSemana[iso]=0; });
   filasBase.forEach(grupo => fechas.forEach(iso => {
     const dia = grupo.dias?.[iso]; if (!dia) return;
     const unidades = Number(dia.unidades || 0); if (!(unidades > 0)) return;
     const samTotal = (dia.detalleOperaciones || []).reduce((s,op)=>s+Number(op.sam || op._samRaw || 0),0);
     samNumeradorPorSemana[iso] += samTotal * unidades;
     unidadesProgramadasPorSemana[iso] += unidades;
+    // El costo unitario de Forrado usa únicamente unidades de estilos que sí tienen ruta.
+    if (!grupo.sinRutaEstilo) unidadesConRutaPorSemana[iso] += unidades;
   }));
   const samPonderadoPorSemana = {}; fechas.forEach(iso => { const u = unidadesProgramadasPorSemana[iso] || 0; samPonderadoPorSemana[iso] = u > 0 ? samNumeradorPorSemana[iso] / u : 0; });
-  const optimo = calcularHCOptimoMOD(totalPorSemana, fechas, reqAreaOptimo); mod8UltimoOptimo = optimo;
+  const optimoBase = calcularHCOptimoMOD(totalPorSemana, fechas, null);
+  const optimo = forradoHebillaModAplicarOptimoManual(optimoBase, totalPorSemana, fechas);
+  mod8UltimoOptimo = optimo;
   renderizarGraficaHCActual(totalPorSemana, fechas);
   const totalGeneral = fechas.reduce((s,iso)=>s+totalPorSemana[iso],0);
   const promedioSemana = totalGeneral / Math.max(fechas.length,1);
@@ -8642,15 +8727,19 @@ renderizarResumenVisualBalance = function() {
   const totalWebRow = fechas.map(iso => `<td>${reqAreaOptimo.WEBBING[iso] > 0 ? Number(reqAreaOptimo.WEBBING[iso]).toFixed(2) : '—'}</td>`).join('');
   const totalEnsProm = fechas.reduce((s,iso)=>s+Number(reqAreaOptimo.ENSAMBLE[iso] || 0),0) / Math.max(fechas.length,1);
   const totalWebProm = fechas.reduce((s,iso)=>s+Number(reqAreaOptimo.WEBBING[iso] || 0),0) / Math.max(fechas.length,1);
-  const optRow = fechas.map(iso => `<td>${optimo.porSemana[iso] != null ? Number(optimo.porSemana[iso]).toFixed(0) : '—'}</td>`).join('');
+  const optRow = fechas.map(iso => {
+    const sem = mod8SemanaDesdeIso(iso);
+    const v = Number(optimo.porSemana[iso] || 0);
+    return `<td class="forradohebillamod-optimo-cell"><input class="forradohebillamod-optimo-input" type="number" min="0" step="1" data-forradohebillamod-optimo-semana="${sem}" value="${Number.isInteger(v)?v:v.toFixed(1)}" title="HC óptimo editable · Semana ${sem}" /></td>`;
+  }).join('');
   const optEnsRow = fechas.map(iso => `<td>${optimo.porArea?.ENSAMBLE?.porSemana?.[iso] != null ? Number(optimo.porArea.ENSAMBLE.porSemana[iso]).toFixed(0) : '—'}</td>`).join('');
   const optWebRow = fechas.map(iso => `<td>${optimo.porArea?.WEBBING?.porSemana?.[iso] != null ? Number(optimo.porArea.WEBBING.porSemana[iso]).toFixed(0) : '—'}</td>`).join('');
   const optEnsProm = optimo.porArea?.ENSAMBLE ? optimo.porArea.ENSAMBLE.promedio.toFixed(1) : '—';
   const optWebProm = optimo.porArea?.WEBBING ? optimo.porArea.WEBBING.promedio.toFixed(1) : '—';
   const unidadesRow = fechas.map(iso => `<td>${unidadesProgramadasPorSemana[iso] > 0 ? Math.round(unidadesProgramadasPorSemana[iso]).toLocaleString('en-US') : '—'}</td>`).join('');
   const costoUnitEnsRow = fechas.map(iso => {
-    const unidades = Number(unidadesProgramadasPorSemana[iso] || 0);
-    const det = optimo.porArea?.ENSAMBLE?.detalle?.find(x => x.iso === iso) || {};
+    const unidades = Number(unidadesConRutaPorSemana[iso] || 0);
+    const det = optimo.detalle?.find(x => x.iso === iso) || {};
     const costo = Number(det.costo || 0); // incluye ordinaria + horas extra estimadas
     return `<td>${unidades > 0 && costo > 0 ? '$' + (costo / unidades).toFixed(4) : '—'}</td>`;
   }).join('');
@@ -8661,8 +8750,8 @@ renderizarResumenVisualBalance = function() {
     return `<td>${unidades > 0 && costo > 0 ? '$' + (costo / unidades).toFixed(4) : '—'}</td>`;
   }).join('');
   const costoUnitEnsProm = (() => {
-    const unidades = fechas.reduce((s,iso)=>s+Number(unidadesProgramadasPorSemana[iso] || 0),0);
-    const costo = optimo.porArea?.ENSAMBLE?.detalle?.reduce((s,x)=>s+Number(x.costo || 0),0) || 0;
+    const unidades = fechas.reduce((s,iso)=>s+Number(unidadesConRutaPorSemana[iso] || 0),0);
+    const costo = optimo.detalle?.reduce((s,x)=>s+Number(x.costo || 0),0) || 0;
     return unidades > 0 && costo > 0 ? '$' + (costo / unidades).toFixed(4) : '—';
   })();
   const costoUnitWebProm = (() => {
@@ -8671,14 +8760,50 @@ renderizarResumenVisualBalance = function() {
     return unidades > 0 && costo > 0 ? '$' + (costo / unidades).toFixed(4) : '—';
   })();
   const samRow = fechas.map(iso => `<td>${samPonderadoPorSemana[iso] > 0 ? samPonderadoPorSemana[iso].toFixed(2) : '—'}</td>`).join('');
+  // Eficiencia proyectada = minutos estándar / (horas semana * 60 * HC óptimo editable)
+  const eficienciaProyectadaPorSemana = {};
+  fechas.forEach(iso => {
+    const sem = mod8SemanaDesdeIso(iso);
+    const horas = Number(mod8Horas(sem) || 0);
+    const hcOpt = Number(optimo.porSemana[iso] || 0);
+    const minutosEstandar = Number(samNumeradorPorSemana[iso] || 0);
+    eficienciaProyectadaPorSemana[iso] = (horas > 0 && hcOpt > 0) ? minutosEstandar / (horas * 60 * hcOpt) : 0;
+  });
+  const eficienciaProyectadaRow = fechas.map(iso => {
+    const ef = Number(eficienciaProyectadaPorSemana[iso] || 0);
+    return `<td>${ef > 0 ? (ef*100).toFixed(1)+'%' : '—'}</td>`;
+  }).join('');
+  const eficienciaProyectadaProm = fechas.reduce((a,iso)=>a+Number(eficienciaProyectadaPorSemana[iso]||0),0) / Math.max(fechas.length,1);
   const unidadesTotal = fechas.reduce((s,iso)=>s+(unidadesProgramadasPorSemana[iso]||0),0);
   const promedioUnidades = unidadesTotal / Math.max(fechas.length,1);
   const samPonderado = fechas.reduce((s,iso)=>s+(samNumeradorPorSemana[iso]||0),0) / Math.max(unidadesTotal,1);
   const totalCaret = mod8TotalHCExpandido ? '▾' : '▸';
   const optCaret = mod8OptimoExpandido ? '▾' : '▸';
-  const totalSubRows = ''; // área única Bodega de Herrajes: sin desglose desplegable
-  const optSubRows = ''; // área única Bodega de Herrajes: sin desglose desplegable
-  tabla.innerHTML = `<table class="balance-visual-table"><thead><tr><th>Línea</th>${thDias}<th>Prom. 8 sem.</th></tr></thead><tbody>${rows}<tr class="balance-visual-total-row"><th>TOTAL HC / SEMANA</th>${totalRow}<td>${promedioSemana.toFixed(2)}</td></tr>${totalSubRows}<tr class="balance-visual-optimo-row"><th>HC ÓPTIMO</th>${optRow}<td>${optimo.promedio.toFixed(1)}</td></tr>${optSubRows}<tr class="balance-visual-unidades-row"><th>TOTAL UNIDADES</th>${unidadesRow}<td>${promedioUnidades > 0 ? Math.round(promedioUnidades).toLocaleString('en-US') : '—'}</td></tr><tr class="balance-visual-cost-unit-row"><th>COSTO UNIT. BODEGA</th>${costoUnitEnsRow}<td>${costoUnitEnsProm}</td></tr><tr class="balance-visual-sam-row"><th>SAM PONDERADO</th>${samRow}<td>${samPonderado > 0 ? samPonderado.toFixed(2) : '—'}</td></tr></tbody></table>`;
+  const totalSubRows = ''; // área única Forrado de Hebilla: sin desglose desplegable
+  const optSubRows = ''; // área única Forrado de Hebilla: sin desglose desplegable
+  tabla.innerHTML = `<table class="balance-visual-table"><thead><tr><th>Línea</th>${thDias}<th>Prom. 8 sem.</th></tr></thead><tbody>${rows}<tr class="balance-visual-total-row"><th>TOTAL HC / SEMANA</th>${totalRow}<td>${promedioSemana.toFixed(2)}</td></tr>${totalSubRows}<tr class="balance-visual-optimo-row"><th>HC ÓPTIMO</th>${optRow}<td>${optimo.promedio.toFixed(1)}</td></tr>${optSubRows}<tr class="balance-visual-eficiencia-proyectada-row"><th>EFICIENCIA PROYECTADA</th>${eficienciaProyectadaRow}<td>${eficienciaProyectadaProm>0?(eficienciaProyectadaProm*100).toFixed(1)+'%':'—'}</td></tr><tr class="balance-visual-unidades-row"><th>TOTAL UNIDADES</th>${unidadesRow}<td>${promedioUnidades > 0 ? Math.round(promedioUnidades).toLocaleString('en-US') : '—'}</td></tr><tr class="balance-visual-cost-unit-row"><th>COSTO UNIT. FORRADO</th>${costoUnitEnsRow}<td>${costoUnitEnsProm}</td></tr><tr class="balance-visual-sam-row"><th>SAM PONDERADO</th>${samRow}<td>${samPonderado > 0 ? samPonderado.toFixed(2) : '—'}</td></tr></tbody></table>`
+  // Snapshot semanal listo para Backend Universal FORRADOHEBILLAMOD.
+  window.__FORRADOHEBILLAMOD_SNAPSHOT = fechas.map(iso => {
+    const sem = mod8SemanaDesdeIso(iso);
+    const unidades = Number(unidadesProgramadasPorSemana[iso] || 0);
+    const unidadesConRuta = Number(unidadesConRutaPorSemana[iso] || 0);
+    const detCosto = optimo.detalle?.find(x => x.iso === iso) || {};
+    const costo = Number(detCosto.costo || 0);
+    return {
+      semana: sem,
+      unidades,
+      unidades_con_ruta: unidadesConRuta,
+      unidades_sin_ruta: Math.max(0, unidades - unidadesConRuta),
+      hc_balance: Number(totalPorSemana[iso] || 0),
+      hc_optimo: Number(optimo.porSemana[iso] || 0),
+      costo_unitario: unidadesConRuta > 0 && costo > 0 ? costo / unidadesConRuta : 0,
+      eficiencia_proyectada: Number(eficienciaProyectadaPorSemana[iso] || 0),
+      horas_semana: Number(mod8Horas(sem) || 0),
+      sam_ponderado: Number(samPonderadoPorSemana[iso] || 0)
+    };
+  });
+  window.forradoHebillaModProgramarSync?.(500);
+;
 };
 
 document.addEventListener('click', function(e) {
@@ -8740,7 +8865,7 @@ document.getElementById('tablaHead')?.addEventListener('input', function(e) {
     f.classList.add('filter-input-search');
   }
   const msg = document.getElementById('uploadMessageText');
-  if (msg) msg.textContent = 'Cargue el MASTER PLAN manual. Se tomarán las próximas 8 semanas ISO. Rutas, SAMs, eficiencias y HC actual de Bodega de Herrajes se leen desde Supabase.';
+  if (msg) msg.textContent = 'Cargue el MASTER PLAN manual. Se tomarán las próximas 8 semanas ISO. Rutas, SAMs, eficiencias y HC actual de Forrado de Hebilla se leen desde Supabase.';
 })();
 
 // Filtro por semana override.
@@ -8799,6 +8924,101 @@ if (document.readyState === 'loading') {
 
   </script>
 
-<!-- CORRECCION 2026-06-17: tooltip grafica Bodega de Herrajes ajustado a resumen visual. No modifica calculos HC, resumen, Supabase ni eficiencias. -->
+<!-- CORRECCION 2026-06-17: tooltip grafica Forrado de Hebilla ajustado a resumen visual. No modifica calculos HC, resumen, Supabase ni eficiencias. -->
+<style>
+/* FORRADOHEBILLAMOD · agregados Backend Universal */
+.forradohebillamod-optimo-cell { padding:0 10px !important; }
+.forradohebillamod-optimo-input {
+  width:100%; min-width:54px; border:0; outline:0; background:transparent;
+  color:#b85b00; font:900 .86rem var(--font-mono); text-align:right; padding:8px 2px;
+  appearance:textfield; -moz-appearance:textfield;
+}
+.forradohebillamod-optimo-input::-webkit-outer-spin-button,.forradohebillamod-optimo-input::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }
+.forradohebillamod-optimo-input:hover,.forradohebillamod-optimo-input:focus { background:rgba(255,184,77,.08); box-shadow:inset 0 -2px 0 rgba(255,184,77,.55); }
+.balance-visual-eficiencia-proyectada-row th,.balance-visual-eficiencia-proyectada-row td{ color:#ff6b7d!important; background:rgba(255,66,85,.10)!important; font-weight:950; border-top:1px solid rgba(255,66,85,.28); }
+body.light-mode .balance-visual-eficiencia-proyectada-row th,body.light-mode .balance-visual-eficiencia-proyectada-row td{ background:#fff1f2!important; color:#e11d48!important; }
+.forradohebillamod-row-route-warning{ background:#fff2a8!important; }
+.forradohebillamod-row-route-warning > td{ background:#fff2a8!important; color:#5b4300!important; border-color:#e6c85c!important; box-shadow:inset 0 1px 0 #e6c85c,inset 0 -1px 0 #e6c85c; }
+.forradohebillamod-row-route-warning > td:first-child{ background:#fff2a8!important; }
+.forradohebillamod-row-route-warning input,.forradohebillamod-row-route-warning .celda-u-input{ color:#5b4300!important; background:transparent!important; }
+.forradohebillamod-row-route-warning .celda-dia-hc,.forradohebillamod-row-route-warning .td-hctotal{ color:#7a5700!important; }
+.forradohebillamod-route-badge{ display:inline-flex; margin-left:6px; padding:1px 7px; border-radius:999px; background:#ffd84d; border:1px solid #d9b400; color:#5b4300; font-size:.60rem; font-weight:950; letter-spacing:.04em; vertical-align:1px; }
+body:not(.light-mode) .forradohebillamod-row-route-warning{ background:rgba(255,216,77,.30)!important; }
+body:not(.light-mode) .forradohebillamod-row-route-warning > td,body:not(.light-mode) .forradohebillamod-row-route-warning > td:first-child{ background:rgba(255,216,77,.30)!important; color:#fff3b0!important; border-color:rgba(255,216,77,.55)!important; }
+body:not(.light-mode) .forradohebillamod-row-route-warning input,body:not(.light-mode) .forradohebillamod-row-route-warning .celda-u-input{ color:#fff3b0!important; }
+body:not(.light-mode) .forradohebillamod-route-badge{ background:#ffd84d; color:#3f3000; }
+.forradohebillamod-sync-toggle{position:fixed;right:18px;top:154px;z-index:1199;min-height:44px;border:0;border-radius:999px;padding:0 18px;background:linear-gradient(135deg,#14945a,#54d98e);color:#06130d;font-weight:950;box-shadow:0 18px 40px rgba(20,148,90,.28);cursor:pointer}
+.forradohebillamod-sync-toggle.error{background:linear-gradient(135deg,#b3202d,#ff4255);color:white}.forradohebillamod-sync-toggle.syncing{background:linear-gradient(135deg,#c68612,#ffd68c)}
+.forradohebillamod-sync-panel{position:fixed;right:18px;top:208px;z-index:1199;width:min(390px,92vw);display:none;border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:14px;background:#11161f;color:#f6f7fb;box-shadow:0 22px 70px rgba(0,0,0,.42)}
+.forradohebillamod-sync-panel.open{display:block}.forradohebillamod-sync-panel h4{margin:0 0 10px}.forradohebillamod-sync-grid{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:.76rem}.forradohebillamod-sync-grid span{color:#aeb6c2}.forradohebillamod-sync-error{margin-top:10px;padding:9px;border-radius:8px;background:rgba(255,66,85,.10);color:#ff9aa5;white-space:pre-wrap;overflow-wrap:anywhere}.forradohebillamod-sync-actions{display:flex;justify-content:flex-end;margin-top:10px}.forradohebillamod-sync-actions button{border:0;border-radius:8px;padding:7px 11px;font-weight:900;cursor:pointer}
+body.light-mode .forradohebillamod-sync-panel{background:#fff;color:#111827;border-color:#d1d5db}
+@media(max-width:720px){.forradohebillamod-sync-toggle{top:auto;bottom:72px}.forradohebillamod-sync-panel{top:auto;bottom:124px}}
+</style>
+<script>
+/* ============================================================
+   FORRADOHEBILLAMOD · Backend Universal 8 semanas
+   Guarda 1 fila por semana. No se mezcla con el balance semanal FORRADO DE HEBILLA.
+   ============================================================ */
+const FORRADOHEBILLAMOD_BACKEND_FUNCTION='engineering-balance-api';
+const FORRADOHEBILLAMOD_FRONTEND_VERSION='forradohebillamod-8w-v1-routed-cost';
+let forradoHebillaModSyncTimer=null, forradoHebillaModSyncing=false, forradoHebillaModLastSync=null, forradoHebillaModLastError='';
+function forradoHebillaModAsegurarUI(){
+  if(!document.getElementById('forradoHebillaModSyncToggle')){
+    const b=document.createElement('button'); b.id='forradoHebillaModSyncToggle'; b.className='forradohebillamod-sync-toggle'; b.textContent='● Sincronización'; b.type='button'; document.body.appendChild(b);
+    const p=document.createElement('div'); p.id='forradoHebillaModSyncPanel'; p.className='forradohebillamod-sync-panel'; p.innerHTML='<h4>FORRADOHEBILLAMOD · Backend Universal</h4><div id="forradoHebillaModSyncBody"></div><div class="forradohebillamod-sync-actions"><button id="forradoHebillaModSyncNow" type="button">Sincronizar ahora</button></div>'; document.body.appendChild(p);
+    b.addEventListener('click',()=>{p.classList.toggle('open');forradoHebillaModPintarSync();});
+    p.querySelector('#forradoHebillaModSyncNow').addEventListener('click',()=>forradoHebillaModSincronizar(true));
+  }
+  forradoHebillaModPintarSync();
+}
+function forradoHebillaModPintarSync(){
+  const b=document.getElementById('forradoHebillaModSyncToggle'), body=document.getElementById('forradoHebillaModSyncBody'); if(!b||!body)return;
+  b.classList.toggle('error',!!forradoHebillaModLastError); b.classList.toggle('syncing',forradoHebillaModSyncing);
+  b.textContent=forradoHebillaModSyncing?'● Sincronizando…':forradoHebillaModLastError?'● Error de sincronización':'● '+(forradoHebillaModLastSync?'Sincronizado':'Sincronización');
+  const rows=window.__FORRADOHEBILLAMOD_SNAPSHOT||[];
+  body.innerHTML=`<div class="forradohebillamod-sync-grid"><span>Área</span><strong>FORRADOHEBILLAMOD</strong><span>Semanas</span><strong>${rows.length}</strong><span>Horizonte</span><strong>${rows.length?`S${rows[0].semana} → S${rows[rows.length-1].semana}`:'—'}</strong><span>Costo unit.</span><strong>Solo unidades con ruta</strong><span>Última sync</span><strong>${forradoHebillaModLastSync?new Date(forradoHebillaModLastSync).toLocaleTimeString():'—'}</strong></div>${forradoHebillaModLastError?`<div class="forradohebillamod-sync-error">${String(forradoHebillaModLastError).replace(/[<>&]/g,m=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[m]))}</div>`:''}`;
+}
+function forradoHebillaModProgramarSync(ms=700){ clearTimeout(forradoHebillaModSyncTimer); forradoHebillaModSyncTimer=setTimeout(()=>forradoHebillaModSincronizar(false),ms); }
+window.forradoHebillaModProgramarSync=forradoHebillaModProgramarSync;
+async function forradoHebillaModSincronizar(manual=false){
+  forradoHebillaModAsegurarUI(); if(forradoHebillaModSyncing)return; const snap=window.__FORRADOHEBILLAMOD_SNAPSHOT||[]; if(!snap.length){ if(manual){forradoHebillaModLastError='No hay balance calculado para sincronizar.';forradoHebillaModPintarSync();} return; }
+  if(!supabaseBalance){forradoHebillaModLastError='Supabase no está disponible en este navegador.';forradoHebillaModPintarSync();return;}
+  forradoHebillaModSyncing=true; forradoHebillaModLastError=''; forradoHebillaModPintarSync();
+  try{
+    const rows=snap.map(r=>({
+      row_key:`SEMANA-${String(r.semana).padStart(2,'0')}|FORRADOHEBILLAMOD`,
+      fecha:null,
+      linea:'FORRADO DE HEBILLA',
+      orden:null,estilo:null,cliente:null,
+      unidades:Number(r.unidades||0),
+      horas:Number(r.horas_semana||0),
+      hc:Number(r.hc_balance||0),
+      sam:Number(r.sam_ponderado||0),
+      eficiencia:Number((Number(r.eficiencia_proyectada||0)*100).toFixed(4)),
+      operacion:null,operaciones:[],missing_route:false,missing_sam:false,
+      metadata:{semana:Number(r.semana),unidades_programadas:Number(r.unidades||0),unidades_con_ruta:Number(r.unidades_con_ruta||0),unidades_sin_ruta:Number(r.unidades_sin_ruta||0),hc_balance:Number(r.hc_balance||0),hc_optimo:Number(r.hc_optimo||0),costo_unitario:Number(r.costo_unitario||0),eficiencia_proyectada:Number(r.eficiencia_proyectada||0),horas_semana:Number(r.horas_semana||0),sam_ponderado:Number(r.sam_ponderado||0),horizonte:'8_semanas',inicia_semana_siguiente:true,regla_costo_unitario:'solo_unidades_con_ruta'}
+    }));
+    const body={action:'sync',area:'FORRADOHEBILLAMOD',display_name:'Forrado de Hebilla MOD',aliases:['forradohebillamod','forrado de hebilla mod','mod forrado de hebilla','forrado hebilla 8 semanas','forrado de hebilla 8 semanas'],config_id:'default',frontend_version:FORRADOHEBILLAMOD_FRONTEND_VERSION,uses_sam:true,uses_efficiency:true,uses_lines:false,supports_hc:true,programa:[],programa_fuente:'MASTER PLAN manual · próximas 8 semanas desde semana siguiente',horas_por_dia:Object.fromEntries(snap.map(r=>['SEMANA-'+String(r.semana).padStart(2,'0'),Number(r.horas_semana||0)])),eficiencias:{},operaciones_inactivas:[],rows,result:{daily_summary:snap.map(r=>({semana:r.semana,unidades:r.unidades,unidades_con_ruta:r.unidades_con_ruta,unidades_sin_ruta:r.unidades_sin_ruta,hc_balance:r.hc_balance,hc_optimo:r.hc_optimo,costo_unitario:r.costo_unitario,eficiencia_proyectada:r.eficiencia_proyectada,horas_semana:r.horas_semana,sam_ponderado:r.sam_ponderado})),hc_by_line_day:[],audit:{},inputs:{horizonte_semanas:8,semana_inicio:snap[0]?.semana||null,semana_fin:snap[snap.length-1]?.semana||null},metadata:{tipo_balance:'MOD_8_SEMANAS',hc_optimo_editable:true,costo_unitario_solo_unidades_con_ruta:true}}};
+    const {data,error}=await supabaseBalance.functions.invoke(FORRADOHEBILLAMOD_BACKEND_FUNCTION,{body});
+    if(error) throw error; if(!data?.ok) throw new Error(data?.error||'El backend no confirmó la sincronización.');
+    forradoHebillaModLastSync=data.synced_at||new Date().toISOString(); forradoHebillaModLastError='';
+  }catch(e){ forradoHebillaModLastError=e?.context?.body?.error||e?.message||String(e); console.error('FORRADOHEBILLAMOD sync:',e); }
+  finally{forradoHebillaModSyncing=false;forradoHebillaModPintarSync();}
+}
+
+document.addEventListener('input',e=>{
+  const inp=e.target.closest('[data-forradohebillamod-optimo-semana]'); if(!inp)return;
+  const sem=String(Number(inp.dataset.forradohebillamodOptimoSemana)); const v=Number(inp.value); if(!sem||!Number.isFinite(v)||v<0)return;
+  forradoHebillaModOptimoManual.set(sem,v); forradoHebillaModGuardarOptimos();
+});
+document.addEventListener('change',e=>{
+  const inp=e.target.closest('[data-forradohebillamod-optimo-semana]'); if(!inp)return;
+  const sem=String(Number(inp.dataset.forradohebillamodOptimoSemana)); const v=Number(inp.value); if(!sem||!Number.isFinite(v)||v<0)return;
+  forradoHebillaModOptimoManual.set(sem,v); forradoHebillaModGuardarOptimos(); renderizarResumenVisualBalance(); forradoHebillaModProgramarSync(250);
+});
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',forradoHebillaModAsegurarUI); else forradoHebillaModAsegurarUI();
+</script>
+
+
 </body>
 </html>
